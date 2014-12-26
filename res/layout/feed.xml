@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/them_blackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bar_collection_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bar_title_color" >
+
+        <ImageView
+            android:id="@+id/bar_collection_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_icon_normal"
+            android:contentDescription="返回上一页"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/bar_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="学生汇"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/feed_post_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8.0dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="发 布"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/news_listview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+        
+        
+        <me.maxwin.view.XListView
+			android:id="@+id/chatting_xlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:divider="@color/line_biack"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:paddingTop="2.0dp"
+            android:scrollingCache="false" >
+            
+            
+         </me.maxwin.view.XListView>
+        
+
+        
+    </LinearLayout>
+
+</LinearLayout>

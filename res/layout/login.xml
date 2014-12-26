@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/them_blackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bar_login_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bar_title_color" >
+
+        <ImageView
+            android:id="@+id/bar_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_icon_normal"
+            android:contentDescription="返回上一页"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/bar_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="登陆系统"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/login_frame_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="15.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="学号："
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:digits="0123456789"
+                android:hint="请输入学号"
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="1.0dip"
+            android:background="@color/line_biack" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="15.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="密码："
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="2.0dip"
+        android:background="@drawable/login_checkedbox_bg" >
+
+        <CheckBox
+            android:id="@+id/login_checked_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18.0dp"
+            android:button="@drawable/bg_checkedbox"
+            android:gravity="center|left"
+            android:text="记住密码"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/login_checked_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18.0dp"
+            android:button="@drawable/bg_checkedbox"
+            android:gravity="center|left"
+            android:text="自动登录"
+            android:visibility="gone"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15.0dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/login_post"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button"
+            android:padding="10.0dip"
+            android:text="登陆"
+            android:textColor="@android:color/white"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:layout_marginTop="10.0dp"
+            android:id="@+id/login_post"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button"
+            android:padding="10.0dip"
+            android:text="我的收藏"
+            android:textColor="@android:color/white"
+            android:onClick="collection"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

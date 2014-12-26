@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/them_blackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bar_collection_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bar_title_color" >
+
+        <ImageView
+            android:id="@+id/bar_collection_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_icon_normal"
+            android:contentDescription="返回上一页"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/bar_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="发布信息"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/feed_postdata"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8.0dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="确 定"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/feed_edt"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="分享大学事儿..." >
+        </EditText>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/blue"
+            android:focusable="false" />
+
+        <LinearLayout
+            android:id="@+id/feed_rgroup_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/feed_rgroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/feed_rgroup_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/rbutton"
+                    android:button="@null"
+                    android:checked="true"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                    android:singleLine="true"
+                    android:text="寻物"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/feed_rgroup_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/rbutton"
+                    android:button="@null"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                    android:singleLine="true"
+                    android:text="交易"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/feed_rgroup_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/rbutton"
+                    android:button="@null"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                    android:singleLine="true"
+                    android:text="求助"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/feed_rgroup_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/rbutton"
+                    android:button="@null"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                    android:singleLine="true"
+                    android:text="爆料"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/button_press"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/collection_list_title"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="4.0"
+                android:background="@color/search_show_sum"
+                android:gravity="center"
+                android:paddingLeft="3.0dip"
+                android:text="我是标题"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="2.0"
+                android:background="@color/button_normal"
+                android:gravity="right|center"
+                android:paddingBottom="4.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="4.0dip"
+                android:text="索书号："
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/collection_list_tv1"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="4.0"
+                android:background="@android:color/white"
+                android:gravity="left|center"
+                android:paddingLeft="10.0dip"
+                android:text="暂无数据"
+                android:textColor="@color/black"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="2.0"
+                android:background="@color/button_normal"
+                android:gravity="right|center"
+                android:paddingBottom="4.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="4.0dip"
+                android:text="ISBN号："
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/collection_list_tv2"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="4.0"
+                android:background="@android:color/white"
+                android:gravity="left|center"
+                android:paddingLeft="10.0dip"
+                android:text="暂无数据"
+                android:textColor="@color/black"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="2.0"
+                android:background="@color/button_normal"
+                android:gravity="right|center"
+                android:paddingBottom="4.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="4.0dip"
+                android:text="出版社："
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/collection_list_tv3"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="4.0"
+                android:background="@android:color/white"
+                android:gravity="left|center"
+                android:paddingLeft="10.0dip"
+                android:text="暂无数据"
+                android:textColor="@color/black"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/collection_child_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="1.0dip"
+                android:layout_marginTop="2.0dip"
+
+                android:layout_weight="4.0"
+                android:background="@drawable/button_red"
+                android:paddingBottom="5.0dp"
+                android:paddingTop="5.0dp"
+                android:text="取消收藏"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.0dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/collection_child_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginRight="1.0dip"
+                android:background="@android:color/white"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollingCache="false" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

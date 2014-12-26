@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/them_blackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bar_guide_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bar_title_color" >
+
+        <ImageView
+            android:id="@+id/bar_guide_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_icon_normal"
+            android:contentDescription="返回上一页"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/bar_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="读者指南"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/guide_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/guide_rgroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/guide_rbutton_1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/rbutton"
+                android:button="@null"
+                android:checked="true"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                 android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                android:text="开馆时间" />
+
+            <RadioButton
+                android:id="@+id/guide_rbutton_2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/rbutton"
+                android:button="@null"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                  android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                android:text="借阅规则" />
+
+            <RadioButton
+                android:id="@+id/guide_rbutton_3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/rbutton"
+                android:button="@null"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                android:text="赔偿规定" />
+
+            <RadioButton
+                android:id="@+id/guide_rbutton_4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/rbutton"
+                android:button="@null"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                   android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                android:text="联系我们" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/guide_open_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5.0dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:text="中心书库"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                     android:background="@color/line_biack" 
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:paddingTop="5.0dp"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content"
+                android:paddingTop="5.0dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dp"
+                    android:text="周一至周五：8：30---22：00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:text="周六、日：9:00---22:00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.0dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:text="湖边阅览室"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:background="@color/line_biack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:background="@android:color/white"
+                android:layout_height="wrap_content"
+                android:paddingTop="5.0dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dp"
+                    android:text="周日至周五：7：00---22:00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:text="周六：9:00---22:00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.0dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:text="实验大楼阅览室"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:background="@color/line_biack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5.0dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dp"
+                    android:text="周一至周五：9：00---22:00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:text="周六、日：不开放"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/guide_borrow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5.0dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:text="书刊借阅规则"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:background="@color/line_biack" />
+
+                <ScrollView
+                    android:background="@android:color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14.0dp"
+                        android:text="@string/borrow"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/guide_pei_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5.0dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:text="逾期及丢失书赔偿"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:background="@color/line_biack" />
+
+                <ScrollView
+                    android:background="@android:color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14.0dp"
+                        android:text="@string/pei"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/guide_call_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5.0dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:text="联系方式"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:background="@color/line_biack" />
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:background="@android:color/white"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14.0dp"
+                        android:text="@string/call"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

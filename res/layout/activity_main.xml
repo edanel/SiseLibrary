@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bar_title_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bar_title_color" >
+
+        <TextView
+            android:id="@+id/bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="广州大学华软软件学院"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/category_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/category_search"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/category_select"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15.0dp" >
+
+            <ImageView
+                android:id="@+id/category_search_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_search"
+                android:contentDescription="None" />
+
+            <TextView
+                android:id="@+id/category_search_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dp"
+                android:gravity="center"
+                android:text="图书搜索"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/category_person"
+            android:layout_width="0.0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="7.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/category_select"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15.0dp" >
+
+            <ImageView
+                android:id="@+id/category_person_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_person"
+                android:contentDescription="None" />
+
+            <TextView
+                android:id="@+id/category_person_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dp"
+                android:gravity="center"
+                android:text="我的阅读"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/category_mails"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/category_select"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15.0dp" >
+
+            <ImageView
+                android:id="@+id/category_mail_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mail"
+                android:contentDescription="None" />
+
+            <TextView
+                android:id="@+id/category_mail_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dp"
+                android:gravity="center"
+                android:text="学生汇"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/category_newss"
+            android:layout_width="0.0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="7.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/category_select"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15.0dp" >
+
+            <ImageView
+                android:id="@+id/category_news_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/news"
+                android:contentDescription="None" />
+
+            <TextView
+                android:id="@+id/category_news_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dp"
+                android:gravity="center"
+                android:text="学院新闻"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/category_guide"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/category_select"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15.0dp" >
+
+            <ImageView
+                android:id="@+id/category_guide_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_guide"
+                android:contentDescription="None" />
+
+            <TextView
+                android:id="@+id/category_guide_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dp"
+                android:gravity="center"
+                android:text="读者指南"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/category_about"
+            android:layout_width="0.0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="7.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/category_select"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15.0dp" >
+
+            <ImageView
+                android:id="@+id/category_about_ig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my"
+                android:contentDescription="None" />
+
+            <TextView
+                android:id="@+id/category_about_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dp"
+                android:gravity="center"
+                android:text="关于软件"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/copyright"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/copyright_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dp"
+            android:gravity="center"
+            android:text="©Copyright 2014 Version:1.1"
+            android:textColor="@color/bar_title_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bar_title_color">#479ed4</color>
+    <color name="button_normal">#479ed4</color>
+    <color name="list_normal">#00ffffff</color>
+    <color name="button_press">#0072b8</color>
+    <color name="category_color">#60000000</color>
+    <color name="category_color_press">#80000000</color>
+    <color name="them_blackground">#ffe6e6e6</color>
+    <color name="search_show_sum">#d0d0d0</color>
+    <color name="black">#494944</color>
+    <color name="line_biack">#dadada</color>
+    <color name="red">#fb5e5e</color>
+    <color name="red_normal">#fb5e5e</color>
+    <color name="red_press">#fc3434</color>
+    <color name="transparent">#00000000</color>
+    <color name="font_value">#ff888271</color>
+        <color name="transparent_background">#00ffffff</color>
+    <color name="font_attribute">#ff000000</color>
+        <color name="blue">#ff0f81d9</color>
+
+</resources>

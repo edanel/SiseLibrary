@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:gravity="center_horizontal"
+        android:id="@+id/search_show_list_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+       android:textSize="18sp"
+        android:text="即将加载更多数据..."
+        />
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/them_blackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bar_news_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bar_title_color" >
+
+        <ImageView
+            android:id="@+id/bar_news_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_icon_normal"
+            android:contentDescription="返回上一页"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/bar_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="学院新闻"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/news_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dp"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/news_rgroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/news_rbutton_1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/rbutton"
+                android:button="@null"
+                android:checked="true"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:paddingBottom="4.0dp"
+                android:paddingTop="4.0dp"
+                android:text="院系新闻" />
+
+            <RadioButton
+                android:id="@+id/news_rbutton_2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/rbutton"
+                android:button="@null"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:paddingBottom="4.0dp"
+                android:paddingTop="4.0dp"
+                android:text="IT论坛" />
+
+            <RadioButton
+                android:id="@+id/news_rbutton_3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/rbutton"
+                android:button="@null"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:paddingBottom="4.0dp"
+                android:paddingTop="4.0dp"
+                android:text="学术殿堂" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/news_listview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <me.maxwin.view.XListView
+            android:id="@+id/news_xlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:divider="@color/line_biack"
+            android:dividerHeight="1.0dp"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+             android:scrollingCache="false" 
+            android:paddingTop="2.0dp" >
+        </me.maxwin.view.XListView>
+    </LinearLayout>
+
+</LinearLayout>

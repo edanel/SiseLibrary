@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/them_blackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bar_search_start_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bar_title_color" >
+
+        <ImageView
+            android:id="@+id/bar_start_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_icon_normal"
+            android:contentDescription="返回上一页"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/bar_search_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="图书搜索"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint="请输入关键字"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/search_rgroup_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/search_rgroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/search_rgroup_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/rbutton"
+                    android:button="@null"
+                    android:checked="true"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                    android:singleLine="true"
+                    android:text="书名"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/search_rgroup_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/rbutton"
+                    android:button="@null"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                    android:singleLine="true"
+                    android:text="作者名"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/search_rgroup_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/rbutton"
+                    android:button="@null"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                    android:singleLine="true"
+                    android:text="出版社"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white" />
+
+                <RadioButton
+                    android:id="@+id/search_rgroup_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/rbutton"
+                    android:button="@null"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:paddingBottom="8.0dp"
+                    android:paddingTop="8.0dp"
+                    android:singleLine="true"
+                    android:text="索书号"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dp"
+            android:layout_marginTop="10.0dp"
+            android:background="@drawable/button"
+            android:text="搜   索"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
